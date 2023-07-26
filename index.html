@@ -30,7 +30,7 @@
     <link rel="mask-icon" href="images/icon/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <title>한살림 장보기 :: 지구를 살리는 뜻깊은 생활실천, 한살림</title>
+    <title>(클론)한살림 장보기 :: 지구를 살리는 뜻깊은 생활실천, 한살림</title>
     <!-- IE 9 이하는 HTML5 태그를 지원하지 않는다. -->
     <!--[if lt IE 9]>
             <script src="js/html5shiv.js"></script>
@@ -490,7 +490,13 @@
                 <div class="swiper sw-visual">
                     <div class="swiper-wrapper" id="data-visual">
                         <!-- 데이터 출력 -->
-                        <!-- <div class="swiper-slide"></div> -->
+                        <!-- <div class="swiper-slide">
+                            <div class="visual-slide-page">
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -500,13 +506,72 @@
             <!-- 슬라이드 컨트롤러 -->
             <div class="visual-control clearfix">
                 <button class="visual-play"></button>
-                <div class="visual-pg">1/17</div>
+                <div class="visual-pg"></div>
                 <button class="visual-more"></button>
             </div>
         </section>
         <!-- 오늘의 상품 -->
+        <section class="today">
+            <div class="container">
+                <h2 class="section-title"><b>이 물품은 어떠세요?</b></h2>
+                <div class="good-wrap" id="data-today">
+                    <!-- 외부 오늘상품 데이터 연동 js -->
+                </div>
+                <div class="good-wrap no-mb" id="data-today2">
+                    <!-- 외부 오늘상품 데이터 연동 js -->
+
+                </div>
+            </div>
+        </section>
         <!-- 알뜰 상품 -->
+        <section class="sale">
+            <div class="container">
+                <div class="layout-wrap clearfix">
+                    <div class="layout-left">
+                        <h2 class="section-title section-bar">
+                            놓치기 아쉬운<br>
+                            <b>알뜰물품</b>
+                        </h2>
+                        <p class="section-title-txt">
+                            가격인하 물품을 <br />
+                            지금 바로 이용해 보세요
+                        </p>
+                        <a href="#" class="section-bt">더보기</a>
+                        <div class="slide-control">
+                            <div class="slide-pg"></div>
+                            <button class="slide-prev">이전</button>
+                            <button class="slide-next">다음</button>
+                        </div>
+                    </div>
+                    <div class="layout-right">
+                        <!-- 알뜰상품 슬라이드 -->
+                        <div class="good-slide" id="data-sale">
+                            <!-- 외부데이터 연동 js -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <!-- 신상품 -->
+        <section class="new">
+            <div class="container">
+                <h2 class="section-title">
+                    반가운<br>
+                    <b>새물품</b>
+                    <a href="#" class="section-bt">더보기</a>
+                </h2>
+                <!-- 새물품 내용 -->
+                <div class="new-wrap clearfix">
+                    <div class="new-left" id="data-new">
+                        <!-- 데이터출력 -->
+                    </div>
+                    <div class="new-right clearfix" id="data-new-list">
+                        <!-- 데이터출력 -->
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- 추천물품 -->
         <!-- 인기물품 -->
         <!-- 브랜드관 -->
