@@ -57,8 +57,8 @@ window.onload = function () {
             showPopularGood();
             // 브랜드관 화면에 배치
             showBrandArr();
-            // 배너 슬라이드 화면에 배치
-            showBanner()
+            // 배너 화면배치
+            showBannerArr()
 
         }
     };
@@ -484,9 +484,11 @@ window.onload = function () {
             }
         })
     }
+
+    // 13. 배너 화면 출력
     let BANNER_ARR;
     let bannerTag = document.getElementById("data-banner");
-    function showBanner(){
+    function showBannerArr(){
         let html = `
             <div class="swiper sw-banner">
                 <div class="swiper-wrapper">
@@ -494,11 +496,9 @@ window.onload = function () {
         BANNER_ARR.forEach(function(item){
             let tag = `
                 <div class="swiper-slide">
-                    <div class="banner-box">
-                        <a href="${item.link}">
-                            <img src="../images/${item.image}" alt="${item.title}">
-                        </a>
-                    </div>
+                    <a href="${item.link}">
+                        <img src="../images/${item.image}" alt="${item.title}">
+                    </a>
                 </div>
             `;
             html += tag;
@@ -510,10 +510,14 @@ window.onload = function () {
         bannerTag.innerHTML = html;
         const swBanner = new Swiper(".sw-banner",{
             slidesPerView: 2,
-            autoplay:true,
+            autoplay:{
+                delay :2500,
+                disableOnInteraction: false,
+            },
+            loop : true,
             navigation: {
-                prevEl: ".banner .slide-prev",
-                nextEl: ".banner .slide-next",
+                prevEl: ".banner-slide-prev",
+                nextEl: ".banner-slide-next",
             },
         })
     }
