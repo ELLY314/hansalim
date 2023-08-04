@@ -1205,3 +1205,468 @@ body {
 .banner-slide-prev:hover{
     background-position: 0px 0;
 }
+
+/* 제철요리 */
+.season{
+    position: relative;
+    display: block;
+}
+.season-wrap{
+    position: relative;
+    display: block;
+}
+.season-left{
+    position: relative;
+    display: block;
+    width: 790px;
+    height: 420px;
+    float: left;
+}
+.season-left a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.season-left a img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.season-info{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+    letter-spacing: 0;
+}
+.season-info h3{
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: #76bd42;
+    color: #fff;
+    font-size: 25px; 
+    font-weight: 700; 
+    padding: 95px 15px 25px 15px;
+    float: left;
+}
+.season-info p{
+    position: relative;
+    display: block;
+    height: 150px;
+    width: 490px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 40px 30px;
+    white-space: nowrap;
+    float: right;
+}
+.season-info p span{
+    position: relative;
+    display: block;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.season-info p b{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+}
+.season-right{
+    position: relative;
+    display: block;
+    width: calc(100% - 790px - 70px);
+    float: right;
+    
+}
+/* Smooth Scrollbar 적용 */
+.scrollbar-thumb {
+    width: 8px !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 4px !important;
+}
+.scrollbar-track {
+    background: rgba(222, 222, 222, 0) !important;
+}
+.season-list{
+    position: relative;
+    display: block;
+    /* background-color: #c7c7c7; */
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+.season-good-list{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: calc(85px * 3);
+    overflow: auto;
+}
+.season-good-list li{
+    position: relative;
+    display: block;
+}
+.season-good{
+    position: relative;
+    display: block;
+    height: 70px;
+    margin-bottom: 15px;
+}
+.season-good-check{
+    position: absolute;
+    top: 0;
+    display: block;
+    left: -20000px;
+}
+.season-label{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/inpCheck.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    background-position: 0px 0px;
+}
+.season-good-check:checked + .season-label{
+    background-position: 0px -36px;
+}
+.season-good-img{
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+    overflow: hidden;
+    float: left;
+}
+.season-good-img img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+.season-good-info{
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    float: left;
+}
+.season-good-title{
+    position: relative;
+    display: block;
+    font-size: 15px;
+}
+.season-good-price{
+    position: relative;
+    display: block;
+    font-size: 13px;
+}
+.season-good-price em{
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    font-size: 20px;
+}
+.season-total{
+    position: relative;
+    display: block;
+}
+.season-good-total{
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    font-size: 20px; 
+    color: #000;
+    margin: 30px 0;
+}
+.season-good-total em{
+    font-style: normal;
+}
+.buy-good{
+    position: relative;
+    display: block;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    padding: 18px 0;
+
+}
+.buy-good em{
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* 이용후기 */
+.review{
+    position: relative;
+    display: block;
+    background-color: #fcf6f2;
+}
+.review .slide-control{
+    margin-top: 40px;
+}
+.review-slide{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 235px;
+}
+.sw-review{}
+.review-box{
+    position: relative;
+    display: block;
+    width: 290px;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+}
+.review-box a{
+    position: relative;
+    display: block;
+}
+.review-box-desc{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 66px;
+    margin-bottom: 15px;
+}
+.review-box-title{
+    display: block;
+    position: relative;
+    font-size: 17px;
+    /* 말줄임 */
+    overflow: hidden;
+    width: 165px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+.review-box-star{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 25px;
+}
+.review-box-star::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background: url(../images/icoRating.png) no-repeat;
+}
+.review-box-img{
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+}
+.review-box-img img{
+    width: 100%;
+    height: 100%;
+}
+.review-box-txt{
+    position: relative;
+    width: 100%;
+    font-size: 13px;
+    /* 3줄 말줄임 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 15px;
+}
+.review-box-user{
+    position: relative;
+    display: block;
+    font-size: 13px;
+}
+/* 커뮤니티 */
+.community{
+    display: block;
+    position: relative;
+}
+.community-notice{
+    display: block;
+    position: relative;
+    width: calc(100% / 3);
+    float: left;
+    padding: 0 40px;
+}
+.community-notice dl{
+    display: block;
+    position: relative;
+}
+.community-notice dl > dt{
+    display: block;
+    position: relative;
+    padding: 0 10px;
+    float: left;
+}
+.community-notice dl > dt:nth-child(1){
+    padding-left: 0;
+}
+.community-notice dl > dt:nth-child(1)::after{
+    content: "";
+    width: 1px;
+    height: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-color: #e5e5e5;
+}
+.community-bt{
+    position: relative;
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    color: #999;
+    font-size: 20px;
+}
+.community-bt-active{
+    color: #000;
+    font-weight: 700;
+}
+
+
+.community-info{
+    position: relative;
+    display: block;
+    width: calc(100% / 3);
+    float: left;
+    padding: 0 40px;
+}
+.community-info h3{
+    position: relative;
+    display: block;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.tel{
+    position: relative;
+    display: block;
+    font-size: 32px;
+    color: #76bd42;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.community-info-list{
+    position: relative;
+    display: block;
+}
+.community-info-list li{
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.community-info-list li .t1{
+    color: #666;
+}
+.community-info-list li .t2{
+    color: #000;
+}
+.community-info-list li .t3{
+    color: #000;
+}
+.community-info-list li > a{
+    font-weight: 700;
+}
+.community-info-list li > b{
+    font-weight: 700;
+}
+
+.community-help{
+    position: relative;
+    display: block;
+    width: calc(100% / 3);
+    float: left;
+    padding: 0 40px;
+}
+.community-help h3{
+    position: relative;
+    display: block;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.community-help-list{
+    position: relative;
+    display: block;
+}
+.community-help-list li{
+    display: block;
+    position: relative;
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+}
+.community-help-list li:nth-child(2n+1){
+    float: left;
+}
+.community-help-list li:nth-child(2n){
+    float: right;
+}
+.community-help-list li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    padding: 0 12px;
+    line-height: 36px;
+    font-size: 13px;
+    color: #333;
+    
+}
+.community-help-list li a::after{
+    content: "";
+    position: absolute;
+    background: url(../images/icoFaq.png) no-repeat;
+    width: 8px;
+    height: 12px;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.community-line::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 1px;
+    height: 190px;
+    background-color: #e5e5e5;
+}

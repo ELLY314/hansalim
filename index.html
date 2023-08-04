@@ -45,6 +45,10 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Smooth Scrollbar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.1/smooth-scrollbar.js"
+    integrity="sha512-yn9N2uBs4OocMUaJ9wZK6ELv+qXIULoRa7IvOsGz2wqWQRt8mNqU1L2I9Fau24PPxEKlGxuEDkRKvsanwAWUYw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="css/style.css">  
     <script src="js/script.js"></script> 
@@ -111,7 +115,7 @@
                                 </button>
                                 <!-- 전체메뉴 -->
                                 <div class="all-menu">
-                                    <div class="all-menu-cate">
+                                    <div class="all-menu-cate" data-scrollbar>
                                         <ul class="cate-list">
                                             <li>
                                                 <a href="#"><span>쌀/잡곡</span></a>
@@ -684,19 +688,105 @@
                     </div>
                     <div class="season-right">
                         <div class="season-list">
-                            <ul class="season-good-list">
+                            <ul class="season-good-list" id="data-season" data-scrollbar>
                                 <!-- 데이터출력 -->
                             </ul>
                         </div>
-                        <div class="season-total">
-                            
+                        <div class="season-total season-good-total">
+                            <input type="checkbox" id="chall" class="season-good-check" checked>
+                            <label for="chall" class="season-label">라벨</label>
+                            전체선택 <em id="buy-total">3</em>개
                         </div>
+                        <a href="#" class="buy-good">
+                            총 <em id="buy-total-money">50,000</em>원 장바구니 담기
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- 이용후기 -->
+        <section class="review">
+            <div class="container">
+                <div class="layout-wrap clearfix">
+                    <div class="layout-left">
+                        <h2 class="section-title section-bar">
+                            조합원의 생생한<br />
+                            <b>이용후기</b>
+                        </h2>
+                        <p class="section-title-txt">
+                            이웃 조합원은 <br />
+                            어떤 물품을 구매했을까요?
+                        </p>
+
+                        <div class="slide-control">
+                            <div class="slide-pg">1/4</div>
+                            <button class="slide-prev">이전</button>
+                            <button class="slide-next">다음</button>
+                        </div>
+                    </div>
+                    <div class="layout-right">
+                        <!-- 이용후기 슬라이드 -->
+                        <div class="review-slide" id="data-review">
+                            <!-- 데이터 출력 js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- 커뮤니티 -->
+        <section class="community">
+            <div class="container clearfix">
+                <div class="community-notice community-line">
+                    <dl class="clearfix">
+                        <dt>
+                            <button class="community-bt community-bt-active">공지사항</button>
+                        </dt>
+                        <dd class="community-visible-active">
+                            <ul class="notice-list" id="data-notice">
+                                <!-- 데이터출력js -->
+                            </ul>
+                        </dd>
+                        <dt>
+                            <button class="community-bt">물품소식</button>
+                        </dt>
+                        <dd>
+                            <ul class="notice-list" id="data-goodnews">
+                                <!-- 데이터출력js -->
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="community-info community-line">
+                    <h3>조합원상담실</h3>
+                    <a href="tel:1661-0800" class="tel">1661-0800</a>
+                    <ul class="community-info-list">
+                        <li>
+                            <span class="t1">평일</span>
+                            <b>오전 9시~오후 6시 (점심시간 12시~1시)</b>
+                        </li>
+                        <li><span class="t2">주말 및 공휴일 휴무</span></li>
+                        <li>
+                            <span class="t1">이메일</span>
+                            <a href="mailto:">hansalim@hansalim.or.kr</a>
+                        </li>
+                        <li>
+                            <span class="t3">* 매장 구입 물품은 해당 매장 문의</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="community-help">
+                    <h3>자주 묻는 질문</h3>
+                    <ul class="community-help-list clearfix">
+                        <li><a href="#">조합원정보</a></li>
+                        <li><a href="#">주문/결제</a></li>
+                        <li><a href="#">취소/반품/환불</a></li>
+                        <li><a href="#">공급</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <!-- 하단 -->
     </div>
 </body>
