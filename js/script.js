@@ -18,7 +18,7 @@ window.onload = function () {
     function priceToString(price) {
         return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-
+    
     // 5.
     // data.json를 로딩
     const xhttp = new XMLHttpRequest();
@@ -768,9 +768,6 @@ window.onload = function () {
 
 
 
-
-
-
     // =========================================
     // 4. 펼침목록들 보기 기능
     // 더보기 목록기능
@@ -879,6 +876,34 @@ window.onload = function () {
                 }
             })
             console.log(index)
+        })
+    })
+
+    // 18. 하단 패밀리 펼침 기능
+    // 목록 열기 버튼
+    const openBt = document.querySelector(".footer-link")
+    // 목록 닫기 버튼
+    const closeBt = document.querySelector(".family-close");
+    // 보여질 패밀리 목록
+    const family = document.querySelector(".family");
+    // 기능처리
+    openBt.addEventListener("click", function(){
+        family.classList.add("active")
+        this.classList.add("active")
+    })
+    closeBt.addEventListener("click", function(){
+        family.classList.remove("active")
+        openBt.classList.remove("active")
+    })
+
+
+    // 19. 고정메뉴 > 위로가기 버튼
+    const fixTopBt = document.querySelector(".fix-top");
+    fixTopBt.addEventListener("click",function(){
+        // window.scrollTo(0,0)
+        window.scrollTo({
+            top: 0,
+            behavior:"smooth"
         })
     })
 };
